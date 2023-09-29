@@ -19,7 +19,4 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/auth', require('./routes/auth.route'));
 app.use('/api/events', require('./routes/events.route'));
 
-
-app.listen(process.env.PORT, () => {
-  console.log(`listening on port ${process.env.PORT}`);
-});
+module.exports = app;
