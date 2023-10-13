@@ -95,6 +95,8 @@ class AuthController {
 
     res.status(200).json({
       ok: true,
+      name,
+      uid,
       token,
     });
   }
